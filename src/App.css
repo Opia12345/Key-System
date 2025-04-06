@@ -1,0 +1,5 @@
+@import "tailwindcss";
+
+.navbar_button {
+    @apply hidden md:flex items-center gap-3 text-sm bg-gradient-to-r rounded-full cursor-pointer px-4 py-3 from-[#000080] transition-all ease-in-out duration-300 via-[#4169E1] to-[#000080] shadow-sm hover:shadow-lg shadow-[#4169E18C] border border-[#4169E1]
+}

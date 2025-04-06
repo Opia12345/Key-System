@@ -1,21 +1,24 @@
 @import "tailwindcss";
 
 .navbar_button {
-    @apply hidden lg:flex items-center gap-3 text-sm bg-gradient-to-r rounded-full cursor-pointer px-4 py-3 from-[#000080] transition-all ease-in-out duration-300 via-[#4169E1] to-[#000080] shadow-sm hover:shadow-lg shadow-[#4169E18C] border border-[#4169E1]
+  @apply hidden lg:flex items-center gap-3 text-sm bg-gradient-to-r rounded-full cursor-pointer px-4 py-3 from-[#000080] transition-all ease-in-out duration-300 via-[#4169E1] to-[#000080] shadow-sm hover:shadow-lg shadow-[#4169E18C] border border-[#4169E1];
 }
 header {
-    background: url('/grid.svg') no-repeat;
-    background-position: center;
-    background-size: cover;
-    height: 100vh;
+  background: url("/grid.svg") no-repeat;
+  background-position: center;
+  background-size: cover;
+  height: 100vh;
 }
 .navbar {
-    @apply p-6 bg-gradient-to-r z-50 fixed w-full top-0 right-0 from-[#05071E] via-[#05071E] to-[#111A89] h-[80px] flex items-center justify-around
+  @apply p-6 bg-gradient-to-r z-50 fixed w-full top-0 right-0 from-[#05071E] via-[#05071E] to-[#111A89] h-[80px] flex items-center justify-around;
 }
 
 .header_button_1 {
-    @apply flex items-center gap-3 md:text-xl text-xs bg-gradient-to-r rounded-full cursor-pointer px-4 py-3 from-[#000080] transition-all ease-in-out duration-300 via-[#4169E1] to-[#000080] shadow-sm hover:translate-y-0.5 shadow-[#4169E18C] border border-[#4169E1]
+  @apply flex items-center gap-3 md:text-xl text-xs bg-gradient-to-r rounded-full cursor-pointer px-4 py-3 from-[#000080] transition-all ease-in-out duration-300 via-[#4169E1] to-[#000080] shadow-sm hover:translate-y-0.5 shadow-[#4169E18C] border border-[#4169E1];
 }
 .header_button_2 {
-    @apply flex items-center gap-3 md:text-xl text-xs rounded-full cursor-pointer px-4 py-3 transition-all ease-in-out duration-300 shadow-sm hover:translate-y-0.5 shadow-[#4169E18C] border border-[#4169E1]
+  @apply flex items-center gap-3 md:text-xl text-xs rounded-full cursor-pointer px-4 py-3 transition-all ease-in-out duration-300 shadow-sm hover:translate-y-0.5 shadow-[#4169E18C] border border-[#4169E1];
+}
+.mobile_nav_button {
+  @apply flex items-center gap-3 text-sm bg-gradient-to-r rounded-full cursor-pointer px-4 py-3 from-[#000080] transition-all ease-in-out duration-300 via-[#4169E1] to-[#000080] shadow-sm hover:shadow-lg shadow-[#4169E18C] border border-[#4169E1];
 }

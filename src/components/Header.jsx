@@ -14,14 +14,14 @@ const Header = () => {
 
       {/* HEADER CONTENT */}
       <div className="flex text-center p-4 flex-col items-center z-10 relative justify-center h-full">
-        <span className="bg-[#2E6D9C] lg:text-md md:text-lg text-xs font-light px-4 py-2 rounded-full border">
+        <span className="bg-[#2E6D9C] lg:text-lg md:text-lg text-xs font-light px-4 py-2 rounded-full border">
           Welcome to KeySystem
         </span>
         <div>
-          <h1 className="lg:text-7xl md:text-7xl text-4xl font-black mt-4">
+          <h1 className="lg:text-8xl md:text-7xl text-4xl font-black mt-4">
             IT Consulting for <br /> Forward-thinking <br /> Businesses
           </h1>
-          <h5 className="mt-4 md:text-xl lg:text-2xl text-xs">
+          <h5 className="mt-4 md:text-xl lg:text-3xl text-xs">
             Driving Digital Transformation, One Solution at a Time
           </h5>
         </div>

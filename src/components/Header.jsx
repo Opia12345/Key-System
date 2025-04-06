@@ -5,7 +5,7 @@ const Header = () => {
   return (
     <header className="relative h-screen overflow-hidden">
       {/* OVERLAY */}
-      <div className="absolute -z-10 right-0">
+      <div className="absolute right-0">
         <img src="/image.png" alt="" className="" />
       </div>
 

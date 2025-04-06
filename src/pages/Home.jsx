@@ -1,11 +1,15 @@
 import React from "react";
 import Header from "../components/Header";
+import PostHeader from "../components/PostHeader";
 
 const Home = () => {
   return (
-    <body className="bg-[#030517] text-white">
-      <Header />
-    </body>
+    <>
+      <div className="bg-[#030517] text-white">
+        <Header />
+        <PostHeader />
+      </div>
+    </>
   );
 };
 

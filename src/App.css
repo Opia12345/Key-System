@@ -9,6 +9,12 @@ header {
   background-size: cover;
   height: 100vh;
 }
+.sectionOne {
+  background: url("/section_one_grid.svg") no-repeat;
+  background-position: center;
+  background-size: cover;
+  height: auto;
+}
 .navbar {
   @apply p-6 bg-gradient-to-r z-50 fixed w-full top-0 right-0 from-[#05071E] via-[#05071E] to-[#111A89] h-[80px] flex items-center justify-around;
 }
@@ -21,4 +27,43 @@ header {
 }
 .mobile_nav_button {
   @apply flex items-center gap-3 text-sm bg-gradient-to-r rounded-full cursor-pointer px-4 py-3 from-[#000080] transition-all ease-in-out duration-300 via-[#4169E1] to-[#000080] shadow-sm hover:shadow-lg shadow-[#4169E18C] border border-[#4169E1];
+}
+.item_one {
+  position: relative;
+  z-index: 0;
+}
+
+.item_one::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  padding: 1px;
+  background: linear-gradient(to top, #dcaec200, #dcaec2);
+  border-radius: calc(Infinity * 1px);
+  -webkit-mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+  -webkit-mask-composite: xor;
+  mask-composite: exclude;
+  z-index: -1;
+}
+.card {
+  position: relative;
+  z-index: 0;
+}
+.card::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  padding: 1px;
+  background: linear-gradient(
+    to bottom,
+    #01b4de,
+    #c9c9c900,
+    #c9c9c900,
+    #01b4de
+  );
+  border-radius: 5px;
+  -webkit-mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+  -webkit-mask-composite: xor;
+  mask-composite: exclude;
+  z-index: -1;
 }

@@ -25,7 +25,7 @@ const Links = () => {
               onMouseEnter={handleMouseEnter}
               onMouseLeave={handleMouseLeave}
             >
-              <span className="md:flex items-center hidden gap-2 cursor-pointer text-slate-400 hover:text-white">
+              <span className="lg:flex items-center hidden gap-2 cursor-pointer text-slate-400 hover:text-white">
                 <h5
                   className={`${
                     location.pathname === link.url ? "font-bold text-white" : ""
@@ -68,7 +68,7 @@ const Links = () => {
         }
         return (
           <Link key={index} to={link.url}>
-            <span className="md:flex hidden items-center gap-2">
+            <span className="lg:flex hidden items-center gap-2">
               <h5
                 className={`text-slate-400 hover:text-white ${
                   location.pathname === link.url ? "font-bold text-white" : ""

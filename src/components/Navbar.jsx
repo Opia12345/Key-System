@@ -5,7 +5,7 @@ import Links from "./Links";
 
 const Navbar = () => {
   return (
-    <nav className="p-6 bg-gradient-to-r fixed w-full top-0 right-0 from-[#05071E] via-[#000080] to-[#111A89] h-[80px] flex items-center justify-around">
+    <nav className="navbar">
       <Link to="/" className="logo">
         <img src="/keySystem.svg" className="w-34 cursor-pointer" alt="Logo" />
       </Link>
@@ -20,7 +20,7 @@ const Navbar = () => {
       </button>
 
       {/* RESPONSIVE BUTTON */}
-      <button className="md:hidden block text-lg">
+      <button className="lg:hidden block text-lg">
         <FontAwesomeIcon icon={faBarsStaggered} />
       </button>
     </nav>

@@ -67,3 +67,19 @@ header {
   mask-composite: exclude;
   z-index: -1;
 }
+.card_2 {
+  position: relative;
+  z-index: 0;
+}
+.card_2::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  padding: 1px;
+  background: linear-gradient(to bottom, #4169e19e, #99999900);
+  border-radius: 5px;
+  -webkit-mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+  -webkit-mask-composite: xor;
+  mask-composite: exclude;
+  z-index: -1;
+}

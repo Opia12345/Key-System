@@ -2,11 +2,11 @@ import React from "react";
 
 const SectionThree = () => {
   return (
-    <section className="bg-[#030517] mt-30 flex flex-col items-center">
+    <section className="mt-30 flex flex-col items-center">
       <h1 className="lg:text-5xl md:text-3xl text-xl text-center font-black">
         What we Represent
       </h1>
-      <p className="text-slate-400 w-[70%] mt-2 lg:text-xl md:text-md text-sm text-center">
+      <p className="text-slate-400 w-[70%] lg:mt-4 mt-1 lg:text-xl md:text-md text-sm text-center">
         Our relentless pursuit of excellence is the driving force behind our
         success.
       </p>
@@ -17,7 +17,7 @@ const SectionThree = () => {
         we are innovating to keep businesses on top of their games.
       </p>
 
-      <div className="grid lg:grid-cols-2 md:grid-cols-2 w-[80%] h-auto gap-6 lg:p-10 mt-8">
+      <div className="grid lg:grid-cols-2 lg:w-[70%] w-[80%] h-auto gap-6 lg:p-10 mt-8">
         <div className="card bg-[url('/combined.svg')] bg-center bg-cover bg-no-repeat w-full">
           <div className="flex justify-center">
             <img src="/target.svg" className="z-30 w-90 h-90" alt="Target" />

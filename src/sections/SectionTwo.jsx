@@ -7,7 +7,7 @@ const SectionTwo = () => {
       <h1 className="lg:text-5xl md:text-3xl text-xl text-center font-black">
         Our Offerings
       </h1>
-      <p className="text-white w-[70%] mt-2 lg:text-2xl md:text-md text-sm text-center">
+      <p className="text-white w-[70%] lg:mt-4 mt-1 lg:text-2xl md:text-md text-sm text-center">
         Leverage KeySystem’s cutting-edge expertise to transform your business.
         Our tailored software and cybersecurity solutions drive efficiency,
         security, and growth. We empower businesses to thrive in the digital
@@ -17,7 +17,7 @@ const SectionTwo = () => {
         <button className="header_button_1">Learn More</button>
       </div>
 
-      <div className="mt-[70px] grid lg:grid-cols-3 text-lg md:grid-cols-3 text-center p-4 gap-6">
+      <div className="mt-[70px] grid lg:grid-cols-3 text-lg md:grid-cols-3 text-center p-8 gap-6">
         {/* GROUP ONE */}
         <div className="flex flex-col items-center gap-6">
           {/* ITEM ONE */}

@@ -3,11 +3,11 @@ import React from "react";
 const SectionOne = () => {
   return (
     <>
-      <section className="sectionOne mt-30 flex flex-col items-center">
+      <section className="sectionOne lg:mt-30 mt-15 flex flex-col items-center">
         <h1 className="lg:text-5xl md:text-3xl text-xl text-center font-black">
           Why we are your Trusted Consultant
         </h1>
-        <p className="text-slate-400 mt-2 lg:text-xl md:text-sm text-xs text-center">
+        <p className="text-slate-400 lg:mt-4 mt-1 lg:text-xl md:text-sm text-xs text-center">
           Empowering Businesses with Cutting-edge Technology
         </p>
         <p className="text-slate-300 w-[70%] mt-8 font-semibold lg:text-3xl md:text-md text-sm text-center">

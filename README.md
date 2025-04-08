@@ -21,9 +21,10 @@ This project is a landing page for a technical interview demonstrating basic Rea
 KeySystem requires [Node.js](https://nodejs.org/) v17+ to run.
 
 ### Installation
-- clone the repository
-- use npm i or npm install to get the dependencies
-- use npm run dev to start the local development server.
+- Clone the repository.
+- Open up your terminal and move to the directory of the project.
+- In your terminal, use npm i or npm install to fetch the dependencies.
+- Use npm run dev to start the local development server.
 
 ```sh
 cd key-system
@@ -34,6 +35,7 @@ Preview the live page of [KeySystem](https://pages.github.com/).
 
 > [!IMPORTANT]
 > The packages on this website will most likely not be updated.
+
 ## License
 
 MIT

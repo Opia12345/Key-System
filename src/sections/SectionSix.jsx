@@ -3,7 +3,7 @@ import React from "react";
 const SectionSix = () => {
   return (
     <section
-      data-aos="fade-left"
+      data-aos="fade-in"
       className="mt-30 flex flex-col items-center"
       aria-label="Our Process Section"
     >

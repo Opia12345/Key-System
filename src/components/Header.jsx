@@ -3,8 +3,8 @@ import Navbar from "./Navbar";
 
 const Header = () => {
   return (
-    <header data-aos="fade-in" className="relative h-screen overflow-hidden">
-      {/* Image Oveerlay */}
+    <header className="relative h-screen overflow-hidden">
+      {/* Image Overlay */}
       <div className="absolute right-0">
         <img src="/image.png" alt="light overlay for decoration" className="" />
       </div>
@@ -13,7 +13,10 @@ const Header = () => {
       <Navbar />
 
       {/* Header Content */}
-      <div className="flex text-center p-4 flex-col items-center z-10 relative justify-center h-full">
+      <div
+        data-aos="fade-in"
+        className="flex text-center p-4 flex-col items-center z-10 relative justify-center h-full"
+      >
         <span className="bg-[#2E6D9C] lg:text-lg md:text-lg text-xs font-light px-4 py-2 rounded-full border">
           Welcome to KeySystem
         </span>

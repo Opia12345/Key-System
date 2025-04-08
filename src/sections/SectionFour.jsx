@@ -5,6 +5,7 @@ import "react-lazy-load-image-component/src/effects/blur.css";
 const SectionFour = () => {
   return (
     <section
+      data-aos="fade-up"
       className="mt-30 flex flex-col items-center"
       aria-label="Compliance and Standards Section"
     >

@@ -1,12 +1,41 @@
-# React + Vite
+# KeySystem
+## Project Overview
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+This project is a landing page for a technical interview demonstrating basic React principles, code structure, animations and micro-interactions. It provides an example of what user experience should feel like for every basic web application.
 
-Currently, two official plugins are available:
+## Features
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- Feature 1: React basic Setup
+- Feature 2: Tailwind styling
+- Feature 3: Optimized images with lazy loading and blur
+- Feature 4: Animation with Framer Motion 
 
-## Expanding the ESLint configuration
+## Technologies Used
+- Frontend: React
+- Styling: CSS, Tailwind
+- Deployment: Vercel and Render
+- Other tools: Tippy, FontAwesome, Framer
 
-If you are developing a production application, we recommend using TypeScript and enable type-aware lint rules. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+## Setup Instructions
+## Prerequisites
+KeySystem requires [Node.js](https://nodejs.org/) v17+ to run.
+
+### Installation
+- clone the repository
+- use npm i or npm install to get the dependencies
+- use npm run dev to start the local development server.
+
+```sh
+cd key-system
+npm i
+npm run dev
+```
+Preview the live page of [KeySystem](https://pages.github.com/).
+
+> [!IMPORTANT]
+> The packages on this website will most likely not be updated.
+## License
+
+MIT
+
+**Completely Free use for personal or commercial purposes. You can modify, distribute, and use the code for whatever.**

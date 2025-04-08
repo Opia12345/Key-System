@@ -1,16 +1,22 @@
+
+//navbar links
 export const navbar_links = [
   { label: "Home", url: "/" },
-  { label: "About", url: "/about" },
+  { label: "About", url: "/not_found" },
   {
     label: "Services",
-    url: "/services",
+    url: "/not_found",
     dropdown: [
-      { label: "Web Development", url: "/services/web" },
-      { label: "UI/UX Design", url: "/services/design" },
+      { label: "Core refresh", url: "/" },
+      { label: "Application management services", url: "/" },
+      { label: "Evolution & enhancement services", url: "/" },
+      { label: "More", url: "/" },
     ],
   },
-  { label: "Contact", url: "/contact" },
+  { label: "Contact", url: "/not_found" },
 ];
+
+//footer details
 export const services = [
   { id: 1, label: "Core refresh" },
   { id: 2, label: "Application management services" },

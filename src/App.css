@@ -1,38 +1,59 @@
 @import "tailwindcss";
 
+/* reset the base styling  */
+@layer base {
+  * {
+    @apply box-border;
+  }
+  body {
+    @apply m-0 p-0 font-sans;
+  }
+}
+
+/* navbar button */
 .navbar_button {
   @apply hidden lg:flex items-center gap-3 text-sm bg-gradient-to-r rounded-full cursor-pointer px-4 py-3 from-[#000080] transition-all ease-in-out duration-300 via-[#4169E1] to-[#000080] shadow-sm hover:shadow-lg shadow-[#4169E18C] border border-[#4169E1];
 }
+
+/* header styling  */
 header {
   background: url("/grid.svg") no-repeat;
   background-position: center;
   background-size: cover;
   height: 100vh;
 }
+
+/* section one styling */
 .sectionOne {
   background: url("/section_one_grid.svg") no-repeat;
   background-position: center;
   background-size: cover;
   height: auto;
 }
+
+/* navigation bar  */
 .navbar {
   @apply p-6 bg-gradient-to-r z-50 fixed w-full top-0 right-0 from-[#05071E] via-[#05071E] to-[#111A89] h-[80px] flex items-center justify-around;
 }
 
+/* header buttons  */
 .header_button_1 {
   @apply flex items-center gap-3 md:text-xl text-xs bg-gradient-to-r rounded-full cursor-pointer px-4 py-3 from-[#000080] transition-all ease-in-out duration-300 via-[#4169E1] to-[#000080] shadow-sm hover:translate-y-0.5 shadow-[#4169E18C] border border-[#4169E1];
 }
 .header_button_2 {
   @apply flex items-center gap-3 md:text-xl text-xs rounded-full cursor-pointer px-4 py-3 transition-all ease-in-out duration-300 shadow-sm hover:translate-y-0.5 shadow-[#4169E18C] border border-[#4169E1];
 }
+
+/* mobile navbar button */
 .mobile_nav_button {
   @apply flex items-center gap-3 text-sm bg-gradient-to-r rounded-full cursor-pointer px-4 py-3 from-[#000080] transition-all ease-in-out duration-300 via-[#4169E1] to-[#000080] shadow-sm hover:shadow-lg shadow-[#4169E18C] border border-[#4169E1];
 }
+
+/* card styling sample */
 .item_one {
   position: relative;
   z-index: 0;
 }
-
 .item_one::before {
   content: "";
   position: absolute;
@@ -45,6 +66,8 @@ header {
   mask-composite: exclude;
   z-index: -1;
 }
+
+/* first card styling */
 .card {
   position: relative;
   z-index: 0;
@@ -67,6 +90,8 @@ header {
   mask-composite: exclude;
   z-index: -1;
 }
+
+/* second card styling */
 .card_2 {
   position: relative;
   z-index: 0;
@@ -83,6 +108,25 @@ header {
   mask-composite: exclude;
   z-index: -1;
 }
+
+/* icon styling */
 .icon {
-  @apply text-slate-400 hover:text-white transition-all ease-in-out duration-300 cursor-pointer
+  @apply text-slate-400 hover:text-white transition-all ease-in-out duration-300 cursor-pointer;
+}
+
+/* scroll to top styling */
+.scroll_to_top {
+  @apply fixed bottom-5 right-5 cursor-pointer p-6 w-4 h-4 flex justify-center items-center rounded-full bg-gradient-to-b from-[#000080] ease-in-out via-[#4169E1] to-[#000080] transition-opacity duration-700;
+}
+.scroll_icon::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  padding: 1px;
+  background: linear-gradient(to bottom, #4169e19e, #99999900);
+  border-radius: calc(Infinity * 1px);
+  -webkit-mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+  -webkit-mask-composite: xor;
+  mask-composite: exclude;
+  z-index: -1;
 }

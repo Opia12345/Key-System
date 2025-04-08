@@ -18,22 +18,22 @@ const Navbar = () => {
         <img
           src="/keySystem.svg"
           className="w-34 cursor-pointer"
-          alt="KeySystem_Logo"
+          alt="KeySystem Logo"
         />
       </Link>
 
-      {/* DESKTOP LINKS */}
+      {/* Desktop links */}
       <div className="hidden lg:flex">
         <Links />
       </div>
 
-      {/* CONTACT BUTTON */}
+      {/* Contact button */}
       <button className="navbar_button hidden lg:flex items-center gap-2">
         <FontAwesomeIcon icon={faPhone} />
         +234 818 444 1404
       </button>
 
-      {/* HAMBURGER ICON */}
+      {/* Hamburger icon */}
       <button
         className="lg:hidden text-white text-xl"
         onClick={() => setIsMobileOpen((prev) => !prev)}
@@ -41,7 +41,7 @@ const Navbar = () => {
         <FontAwesomeIcon icon={isMobileOpen ? faXmark : faBarsStaggered} />
       </button>
 
-      {/* MOBILE NAVIGATION */}
+      {/* Mobile navigation */}
       <MobileNav
         isMobileOpen={isMobileOpen}
         setIsMobileOpen={setIsMobileOpen}

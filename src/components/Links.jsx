@@ -16,8 +16,10 @@ const Links = ({ mobile = false }) => {
   return (
     <div className={`flex ${mobile ? "flex-col gap-6" : "gap-4 items-center"}`}>
       {navbar_links.map((link, index) => {
+        // Setting the active link state 
         const isActive = location.pathname === link.url;
 
+        //Dropdown links
         if (link.label === "Services") {
           return (
             <div

@@ -8,20 +8,27 @@ import {
   faLinkedin,
   faXTwitter,
 } from "@fortawesome/free-brands-svg-icons";
+import Tippy from "@tippyjs/react";
+import "tippy.js/dist/tippy.css";
 
 const Footer = () => {
   return (
     <footer className="p-10">
+      {/* Top Section: Logo & Services */}
       <div className="grid lg:grid-cols-2 gap-4 lg:p-20">
-        {/* GROUP ONE */}
+        {/* Logo and copyright */}
         <div className="place-self-start place-content-center items-center">
-          <img src="/keySystem.svg" alt="" />
+          <img
+            src="/keySystem.svg"
+            alt="KeySystem logo"
+            aria-label="Company logo"
+          />
           <small className="text-xs mt-2">
             &copy; 2025 KeySystem Technology Limited. All rights reserved.
           </small>
         </div>
 
-        {/* GROUP TWO */}
+        {/* Services */}
         <div>
           <h1 className="font-bold text-2xl text-slate-300 mb-4">Services</h1>
 
@@ -35,25 +42,26 @@ const Footer = () => {
         </div>
       </div>
 
+      {/* Quick Links & Office Addresses */}
       <div className="grid lg:grid-cols-2 lg:p-20 gap-4 mt-12 lg:-mt-12">
-        {/* GROUP ONE */}
+        {/* Quick Links */}
         <div>
           <h1 className="font-bold text-2xl text-slate-300 mb-4">
             QUICK LINKS
           </h1>
-          <Link to="/">
+          <Link to="/" aria-label="About Us page">
             <h5 className="mb-1 font-semibold text-slate-400 hover:text-white transition-all ease-in-out duration-300">
               About Us
             </h5>
           </Link>
-          <Link to="/">
+          <Link to="/" aria-label="Sitemap page">
             <h5 className="mb-1 font-semibold text-slate-400 hover:text-white transition-all ease-in-out duration-300">
               Sitemap
             </h5>
           </Link>
         </div>
 
-        {/* GROUP TWO */}
+        {/* Office Addresses */}
         <div>
           <h1 className="font-bold col-span-2 text-2xl text-slate-300 mb-4">
             Contact
@@ -63,7 +71,7 @@ const Footer = () => {
               <h5 className="text-md font-bold mb-1">Nigeria</h5>
               <p>
                 55G Adebisi Omotola Close, Off Samuel Adedoyin Street, Victoria
-                Island
+                Island.
               </p>
             </div>
 
@@ -71,15 +79,16 @@ const Footer = () => {
               <h5 className="text-md font-bold mb-1">United Kingdom</h5>
               <p>
                 39 Kenyon Lane, Off Moston Lane, Moston, Manchester, United
-                Kingdom, M40 9JG
+                Kingdom, M40 9JG.
               </p>
             </div>
           </div>
         </div>
       </div>
 
+      {/* Phone Numbers by Country */}
       <div className="grid lg:grid-cols-2 lg:p-20 gap-4 mt-4">
-        {/* EMPTY LEFT COLUMN */}
+        {/* Left column intentionally blank for layout */}
         <div></div>
 
         <div className="grid lg:grid-cols-3 md:grid-cols-3 gap-4">
@@ -100,16 +109,36 @@ const Footer = () => {
         </div>
       </div>
 
+      {/* Social Links & Final Contact Info */}
       <div className="grid lg:grid-cols-2 lg:p-20 gap-4 mt-12 lg:-mt-12">
-        {/* GROUP ONE */}
+        {/* Social Media Icons */}
         <div className="flex items-end mb-4 text-xl gap-6">
-          <FontAwesomeIcon icon={faInstagram} className="icon" />
-          <FontAwesomeIcon icon={faXTwitter} className="icon" />
-          <FontAwesomeIcon icon={faLinkedin} className="icon" />
-          <FontAwesomeIcon icon={faFacebook} className="icon" />
+          <Tippy content="Instagram" placement="bottom">
+            <a href="https://instagram.com" aria-label="Instagram link">
+              <FontAwesomeIcon icon={faInstagram} className="icon" />
+            </a>
+          </Tippy>
+
+          <Tippy content="X" placement="bottom">
+            <a href="https://twitter.com" aria-label="Twitter/X link">
+              <FontAwesomeIcon icon={faXTwitter} className="icon" />
+            </a>
+          </Tippy>
+
+          <Tippy content="LinkedIn" placement="bottom">
+            <a href="https://linkedin.com" aria-label="LinkedIn link">
+              <FontAwesomeIcon icon={faLinkedin} className="icon" />
+            </a>
+          </Tippy>
+
+          <Tippy content="Facebook" placement="bottom">
+            <a href="https://facebook.com" aria-label="Facebook link">
+              <FontAwesomeIcon icon={faFacebook} className="icon" />
+            </a>
+          </Tippy>
         </div>
 
-        {/* GROUP TWO */}
+        {/* Additional Contact Info */}
         <div>
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-2 gap-6">
             <div>
@@ -119,7 +148,14 @@ const Footer = () => {
 
             <div>
               <h5 className="text-md font-bold mb-1">Email</h5>
-              <p>enquiries@keysystemltd.com</p>
+              <p>
+                <a
+                  href="mailto:enquiries@keysystemltd.com"
+                  aria-label="Send email to enquiries@keysystemltd.com"
+                >
+                  enquiries@keysystemltd.com
+                </a>
+              </p>
             </div>
           </div>
         </div>

@@ -31,7 +31,7 @@ cd key-system
 npm i
 npm run dev
 ```
-Preview the live page of [KeySystem](https://pages.github.com/).
+Preview the live page of [KeySystem](https://key-system-six.vercel.app/).
 
 > [!IMPORTANT]
 > The packages on this website will most likely not be updated.
